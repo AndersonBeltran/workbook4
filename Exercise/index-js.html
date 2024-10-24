@@ -11,16 +11,19 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <main class="container mt-4">
-      <div class="card p-4" style="width: 18rem">
+  <body style="background-color: rgb(34, 34, 34);">
+
+    <main class="container mt-4" style="max-width: 500px">
+      <div class="card p-4"  style="background-color: #b6b6b6">
+
         <form>
-          <label for="statesSelect" class="form-lable">State</label>
-          <select class="form-selct" id="statesSelect">
+          <label for="statesSelect" class="form-lable" style="font-size: larger;">Cars</label>
+          <select class="form-selct" id="statesSelect" style="background-color: #e4e4e4;">
             <option value="">Select...</option>
-            <!-- <option value="1">New York</option>
-            <option value="2">New Jersey</option>
-            <option value="3">Ohio</option> -->
+            <!-- <option value="1">Car1</option>
+            <option value="2">Car2</option>
+            <option value="3">Car3</option>
+            <option value="4">Car4</option> -->
           </select>
         </form>
       </div>
@@ -29,9 +32,24 @@
       "use strict";
       const statesSelect = document.getElementById("statesSelect");
       let option = document.createElement("option");
-      option.text = "New York";
+      option.text = "Car1";
       option.value = "1";
       statesSelect.add(option);
+
+      let option2 = document.createElement("option");
+      option2.text = "Car2";
+      option2.value = "2";
+      statesSelect.add(option2);
+
+      let option3 = document.createElement("option");
+      option3.text = "Car3";
+      option3.value = "3";
+      statesSelect.add(option3);
+
+      let option4 = document.createElement("option");
+      option4.text = "Car4";
+      option4.value = "4";
+      statesSelect.add(option4);
     </script>
   </body>
 </html>
