@@ -11,45 +11,99 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: rgb(34, 34, 34);">
-
+  <body style="background-color: rgb(34, 34, 34)">
     <main class="container mt-4" style="max-width: 500px">
-      <div class="card p-4"  style="background-color: #b6b6b6">
-
+      <div class="card p-4" style="background-color: #b6b6b6">
         <form>
-          <label for="statesSelect" class="form-lable" style="font-size: larger;">Cars</label>
-          <select class="form-selct" id="statesSelect" style="background-color: #e4e4e4;">
-            <option value="">Select...</option>
-            <!-- <option value="1">Car1</option>
-            <option value="2">Car2</option>
-            <option value="3">Car3</option>
-            <option value="4">Car4</option> -->
+          <label for="Formula1" class="form-lable" style="font-size: larger">Formula 1</label>
+          <select class="form-select" id="Formula1" style="background-color: #e4e4e4">
+            <option value="">Select Team...</option>
+            <!-- <option value="1">Red Bull Racing</option>
+            <option value="2">Mercedes-AMG Petronas</option>
+            <option value="3">Ferrari</option>
+            <option value="4">McLaren</option>
+            <option value="4">Aston Martin</option>
+            <option value="4">Alpine</option>
+            <option value="4">Williams</option>
+            <option value="4">AlphaTauri</option>
+            <option value="4">Alfa Romeo</option>
+            <option value="4">Haas F1 Team</option> -->
           </select>
         </form>
       </div>
     </main>
     <script>
-      "use strict";
-      const statesSelect = document.getElementById("statesSelect");
-      let option = document.createElement("option");
-      option.text = "Car1";
-      option.value = "1";
-      statesSelect.add(option);
+            "use strict";
+            const f1Teams = [
+              "Red Bull Racing",
+              "Mercedes-AMG Petronas",
+              "Ferrari",
+              "McLaren",
+              "Aston Martin",
+              "Alpine",
+              "Williams",
+              "AlphaTauri",
+              "Alfa Romeo",
+              "Haas F1 Team",
+            ];
+            let Formula1 = document.getElementById("Formula1");
 
-      let option2 = document.createElement("option");
-      option2.text = "Car2";
-      option2.value = "2";
-      statesSelect.add(option2);
+      for (const team of f1Teams) {
+        let option = document.createElement("option");
+        option.value = team;
+        option.text = team;
+        Formula1.add(option);
+        }
 
-      let option3 = document.createElement("option");
-      option3.text = "Car3";
-      option3.value = "3";
-      statesSelect.add(option3);
+            // const Formula1 = document.getElementById("Formula1");
+            // let option = document.createElement("option");
+            // option.text = "Red Bull Racing";
+            // option.value = "1";
+            // Formula1.add(option);
 
-      let option4 = document.createElement("option");
-      option4.text = "Car4";
-      option4.value = "4";
-      statesSelect.add(option4);
+            // let option2 = document.createElement("option");
+            // option2.text = "Mercedes-AMG Petronas";
+            // option2.value = "2";
+            // Formula1.add(option2);
+
+            // let option3 = document.createElement("option");
+            // option3.text = "Ferrari";
+            // option3.value = "3";
+            // Formula1.add(option3);
+
+            // let option4 = document.createElement("option");
+            // option4.text = "McLaren";
+            // option4.value = "4";
+            // Formula1.add(option4);
+            // let option5 = document.createElement("option");
+            // option5.text = "Aston Martin";
+            // option5.value = "5";
+            // Formula1.add(option5);
+
+            // let option6 = document.createElement("option");
+            // option6.text = "Alpine";
+            // option6.value = "6";
+            // Formula1.add(option6);
+
+            // let option7 = document.createElement("option");
+            // option7.text = "Williams";
+            // option7.value = "7";
+            // Formula1.add(option7);
+
+            // let option8 = document.createElement("option");
+            // option8.text = "AlphaTauri";
+            // option8.value = "8";
+            // Formula1.add(option8);
+
+            // let option9 = document.createElement("option");
+            // option9.text = "Alfa Romeo";
+            // option9.value = "9";
+            // Formula1.add(option9);
+
+            // let option10 = document.createElement("option");
+            // option10.text = "Haas F1 Team";
+            // option10.value = "10";
+            // Formula1.add(option10);
     </script>
   </body>
 </html>
